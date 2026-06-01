@@ -5,216 +5,623 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portofilio:-Abhay</title>
+    <title>Abhay Dubey | Mobile Application Developer</title>
+    <meta name="description" content="Portfolio of Abhay Dubey, a Mobile Application Developer with 3+ years of experience building high-scale cross-platform mobile apps, SaaS tools, and real-time tracking platforms.">
+    <meta name="keywords" content="Abhay Dubey, Mobile Application Developer, React Native, Mobile Developer, MERN Stack, Next.js, Calmate AI, Mutual Fund Wala">
     <script src="https://kit.fontawesome.com/5b34729bac.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="Logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portofolio</a></li>
-                    <li><a href="#contact">Contact-us</a></li>
-                    <i class="fa fa-solid fa-xmark" onclick="Closemenu()"></i>
-                </ul>
-                <i class="fa fa-solid fa-bars" onclick="Openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Web Designer|Developer</p>
-                <h1>Hi, I'm <span>Abhay Dubey</span> <br />from India</h1>
-            </div>
-        </div>
+    <!-- Background Ambient Glow Blobs -->
+    <div class="glow-bg">
+        <div class="glow-blob glow-blob-1"></div>
+        <div class="glow-blob glow-blob-2"></div>
+        <div class="glow-blob glow-blob-3"></div>
     </div>
 
-    <!-- About -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Abhay.png" alt="" srcset="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>Hello, I'm Abhay Dubey and I am full stack developer.I know frontend and backend very well and I can build the web application using MERN Stack. so recently i have done many project ie- Ecommerce web app, online Note, news app, Real time messaging application, and so on.</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container" style="display: flex; width: 100%; justify-content: space-between; align-items: center;">
+            <a href="#header" class="logo">Abhay<span>.dev</span></a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <header id="header">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-text">
+                    <span class="hero-badge"><i class="fa-solid fa-code"></i> React Native Specialist</span>
+                    <h1>Hi, I'm <span>Abhay Dubey</span><br>Mobile Application Developer</h1>
+                    <p>React Native Developer with 3+ years of experience building scalable cross-platform apps, SaaS products, and real-time tracking systems. Delivered applications supporting over 50,000 users globally.</p>
+                    
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Let's Connect</a>
+                        <a href="Abhay_Dubey_Final_Resume.pdf" download class="btn btn-secondary"><i class="fa-solid fa-download"></i> Download Resume</a>
+                    </div>
+                    
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/abhay-dubey-352b7828a" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/abhay2767" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/918859022825" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:abhaydubey2767@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+918859022825" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-img-container">
+                        <img src="AbhayImg.jpeg" alt="Abhay Dubey Profile photo">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Career Metrics Ribbon -->
+            <div class="metrics-ribbon glass-card">
+                <div class="metric-card">
+                    <div class="metric-number">3+</div>
+                    <div class="metric-label">Years Experience</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">50K+</div>
+                    <div class="metric-label">Calmate AI Users</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">6+</div>
+                    <div class="metric-label">Apps Published</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">10+</div>
+                    <div class="metric-label">Delivered Projects</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="sub-title">Professional Profile</h2>
+            <p class="section-desc">Passionate engineer focused on crafting optimal, lightning-fast interfaces and resilient server microservices for high-impact applications.</p>
+            
+            <div class="about-grid">
+                <!-- Left Details Profile & Tab titles -->
+                <div class="about-details">
+                    <p>I am a versatile software engineer who excels at building performant cross-platform mobile apps with React Native, and robust server architectures using the MERN stack. My expertise spans real-time vehicle tracking, OTA live-code deployments, and secure multi-tier merchant SaaS environments.</p>
+                    
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <div class="tab-links active-link" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                        <div class="tab-links" onclick="opentab('languages')">Languages</div>
                     </div>
 
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Frontend Development</span><br />HTML5,CSS,Tailwind Css Javascript, React Js + Redux, Next Js with these technologies i can design the fully functional and responsive website</li>
-                            <li><span>Backend Development</span><br />Node Js, Expresss, MongoDb, MySql Database, Restful API's Development, JWT Authentication and so on. I can build your backend using above given technologies with security</li>
-                            <li><span>Deployment</span><br />AWS, Azure, Docker, Server,Linux, Putty, and so on. I have the fully practically knowlodge of Devops and I have very good skilled of Version Control [Git and Github]</li>
-                        </ul>
+                    <!-- Experience Timeline -->
+                    <div class="tab-contents active-tab" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">October 2025 - Present</div>
+                                <h3 class="timeline-title">Software Development Engineer-1</h3>
+                                <div class="timeline-subtitle">Startup Labs Infotech Pvt Ltd | Jaipur</div>
+                                <div class="timeline-desc">
+                                    <ul>
+                                        <li>Developing and optimizing the <strong>Mutual Fund Wala</strong> financial investment platform on React Native.</li>
+                                        <li>Architecting the upcoming <strong>Barber Network SaaS Product</strong>, incorporating real-time live routing tracking and Stripe Payment integrations.</li>
+                                        <li>Streamlining continuous delivery pipelines and aligning UI components with product strategies.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">July 2025 - September 2025</div>
+                                <h3 class="timeline-title">React Native Developer</h3>
+                                <div class="timeline-subtitle">Harshit Info Solutions Pvt Ltd | Delhi</div>
+                                <div class="timeline-desc">
+                                    <ul>
+                                        <li>Maintained and optimized <strong>Calmate AI Calorie Calculator App</strong> (serving 50K+ active users).</li>
+                                        <li>Programmed AI-powered food photo analysis indicators and calorie trackers.</li>
+                                        <li>Integrated Sentry.io diagnostics, Appsflyer cohort tracking, and React IAP billing models.</li>
+                                        <li>Automated over-the-air hotfix deployments (CodePush/RevoPush).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">April 2024 - June 2025</div>
+                                <h3 class="timeline-title">Full Stack Developer</h3>
+                                <div class="timeline-subtitle">Cybercure Technologies | Ghaziabad, UP</div>
+                                <div class="timeline-desc">
+                                    <ul>
+                                        <li>Architected internal complex ERP structures (Leave, Attendance, Projects, Client modules).</li>
+                                        <li>Implemented real-time bidirectional chatting and chat groups utilizing WebSocket and Socket.IO.</li>
+                                        <li>Administered full deployment procedures across remote servers and terminal systems.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">May 2023 - March 2024</div>
+                                <h3 class="timeline-title">React Native Developer</h3>
+                                <div class="timeline-subtitle">Onlinebano Pvt. Ltd. | Sagar Pur, New Delhi</div>
+                                <div class="timeline-desc">
+                                    <ul>
+                                        <li>Released multiple standalone native-wrapped products on Play Store and App Store.</li>
+                                        <li>Structured local storage syncing routines for robust offline support.</li>
+                                        <li>Constructed localized push notification frameworks and REST client calls.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Entry Level Developer</span><br />Now's the day i am a freasher and lokking for opportuinty to show case my skills and help the Orgnization like you to grow together.</li>
-                            <!-- <li><span>2019 - 2022</span><br />Team lead at StartApp LLC</li>
-                            <li><span>2017 - 2019</span><br />UI|UX Design Executive at COin Degital Ltd</li>
-                            <li><span>2016 - 2017</span><br />Internship at ekart eCommerce</li> -->
-                        </ul>
-                    </div>
+
+                    <!-- Education Details -->
                     <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2017-20</span><br />BCA from PSIT Collage Kanpur, Utter Pradesh</li>
-                            <li><span>2021-22</span><br />Work in Pvt Ltd company with the roll of Admin Officer HMEL in Bhatinda, Panjab </li>
-                            <li><span>2022-24</span><br />MCA from WCTM Collage Gurgaon, Haryana</li>
-                        </ul>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2022 - 2024</div>
+                                <h3 class="timeline-title">MCA (Master of Computer Application)</h3>
+                                <div class="timeline-subtitle">Maharshi Dayanand University, Rohtak</div>
+                                <div class="timeline-desc">Graduated with a focus on Advanced Software Engineering & Database Structures (67.17% Aggregate).</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2017 - 2020</div>
+                                <h3 class="timeline-title">BCA (Bachelor of Computer Application)</h3>
+                                <div class="timeline-subtitle">CSJM University, Kanpur</div>
+                                <div class="timeline-desc">Acquired foundational computer sciences principles, system analysis, algorithms, and web technologies (57.5% Score).</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="tab-contents" id="languages">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h3 class="timeline-title">Hindi</h3>
+                                <div class="timeline-desc">Native Proficiency - Fluent verbal and written communications.</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <h3 class="timeline-title">English</h3>
+                                <div class="timeline-desc">Professional Working Proficiency - Technical research and product discussion fluent.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Details Graphic & visual resume details -->
+                <div>
+                    <div class="skills-dashboard" style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                        <!-- Mobile Development -->
+                        <div class="skill-cat-card glass-card">
+                            <h3><i class="fa-solid fa-mobile-screen-button"></i> Mobile Development</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React Native (CLI & Expo)</span>
+                                <span class="skill-tag">iOS Deployment</span>
+                                <span class="skill-tag">Android Development</span>
+                                <span class="skill-tag">Google Play Console</span>
+                                <span class="skill-tag">Apple Developer Account</span>
+                                <span class="skill-tag">OTA Updates (CodePush)</span>
+                            </div>
+                        </div>
+
+                        <!-- Web & Backend Stack -->
+                        <div class="skill-cat-card glass-card">
+                            <h3><i class="fa-solid fa-server"></i> Web & Backend</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">React.js</span>
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Express.js</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">WebSocket (Socket.IO)</span>
+                            </div>
+                        </div>
+
+                        <!-- APIs, Tracking & Payments -->
+                        <div class="skill-cat-card glass-card">
+                            <h3><i class="fa-solid fa-credit-card"></i> APIs, Tracking & Billing</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Google Maps API</span>
+                                <span class="skill-tag">Real-time GPS Tracking</span>
+                                <span class="skill-tag">Razorpay</span>
+                                <span class="skill-tag">Stripe</span>
+                                <span class="skill-tag">React IAP</span>
+                                <span class="skill-tag">PayPal</span>
+                            </div>
+                        </div>
+
+                        <!-- Tools & Monitoring services -->
+                        <div class="skill-cat-card glass-card">
+                            <h3><i class="fa-solid fa-chart-line"></i> Analytics & Cloud</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Appsflyer</span>
+                                <span class="skill-tag">Sentry.io</span>
+                                <span class="skill-tag">Firebase</span>
+                                <span class="skill-tag">AWS Cloud</span>
+                                <span class="skill-tag">Jest Unit Testing</span>
+                                <span class="skill-tag">Google Cloud</span>
+                                <span class="skill-tag">CleverTap / Clarity</span>
+                                <span class="skill-tag">Postman</span>
+                                <span class="skill-tag">Figma</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-
-    <!-- Services -->
-    <div id="services">
+    <!-- Services Section -->
+    <section id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Designing</h2>
-                    <p>I can build your website with thr help of frontend library or Framework React Js and Next Js</p>
-                    <a href="#">Learn more</a>
+            <h2 class="sub-title">Expertise</h2>
+            <p class="section-desc">What I bring to your team to build highly responsive, performant products.</p>
+            <div class="services-grid">
+                <div class="service-card glass-card">
+                    <i class="fa-solid fa-cubes service-icon"></i>
+                    <h3>App Development</h3>
+                    <p>Building gorgeous cross-platform applications on iOS and Android using React Native CLI or Expo with native-like response animations.</p>
                 </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Web Development</h2>
-                    <p>I can manage and develop the backend system using Nodejs and Express and integrate the database like mongoDb and MySql with security features and I have skilled to manage User Authentication using JWT</p>
-                    <a href="#">Learn more</a>
+                <div class="service-card glass-card">
+                    <i class="fa-solid fa-database service-icon"></i>
+                    <h3>Full Stack Systems</h3>
+                    <p>Developing lightweight robust web servers using Node, Next.js, and Express, alongside high-performance database architectures on MongoDB and SQL.</p>
                 </div>
-                <div>
-                    <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>Deployment</h2>
-                    <p>From Desiging to developing your web app another service we have that is to Deployment of the project because I have also skilled to Devops Enginerring.</p>
-                    <a href="#">Learn more</a>
+                <div class="service-card glass-card">
+                    <i class="fa-solid fa-route service-icon"></i>
+                    <h3>Live GPS & SaaS</h3>
+                    <p>Implementing high-accuracy maps rendering, live location calculations, geofencing routines, real-time socket connections, and Stripe billing pipelines.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Portofolio -->
-    <div id="portfolio">
+    <!-- Portfolio Projects Section -->
+    <section id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="work-1.jpg" alt="" srcset="">
-                    <div class="layer">
-                        <h3>Data Store on Cloud</h3>
-                        <p>The app helps to store the data like note, image and documents on cloud means, you can add the your personal data on our webiste and access that data anytime and from anywhere.</p>
-                        <a href="http://16.171.62.38:5173/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <h2 class="sub-title">My Projects</h2>
+            <p class="section-desc">A selective display of built mobile systems, SaaS products, and active production packages.</p>
+
+            <!-- FEATURED HIGHLIGHT: Calmate AI (50K+ Downloads) -->
+            <div class="featured-project-container">
+                <div class="featured-project-card glass-card">
+                    <div class="featured-project-info">
+                        <span class="featured-badge"><i class="fa-solid fa-fire"></i> Featured Masterpiece</span>
+                        <h3>Calmate AI</h3>
+                        <div class="featured-downloads-stat">
+                            <i class="fa-solid fa-cloud-arrow-down"></i> 50K+ Downloads
+                        </div>
+                        <p>A flagship calorie calculator and intelligent wellness monitoring utility powered by Artificial Intelligence. I structured the health analysis features, designed responsive food snapshot tools, and automated deployment parameters using secure subscription triggers.</p>
+                        
+                        <div class="tech-tag-list">
+                            <span>React Native</span>
+                            <span>Generative AI</span>
+                            <span>Firebase</span>
+                            <span>React IAP</span>
+                            <span>Appsflyer</span>
+                            <span>Sentry.io</span>
+                            <span>OTA Updates</span>
+                        </div>
+
+                        <div class="download-btn-group">
+                            <a href="https://play.google.com/store/apps/details?id=com.calmate.ai&pcampaignid=web_share" target="_blank" class="store-btn">
+                                <i class="fa-brands fa-google-play" style="color: #3bccff;"></i>
+                                <div class="store-btn-text">
+                                    <span>Get it on</span>
+                                    <span>Google Play</span>
+                                </div>
+                            </a>
+                            <a href="https://apps.apple.com/in/app/calorie-calculator-calmate-ai/id6746127427" target="_blank" class="store-btn">
+                                <i class="fa-brands fa-apple" style="color: #fff;"></i>
+                                <div class="store-btn-text">
+                                    <span>Download on the</span>
+                                    <span>App Store</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="work-2.jpg" alt="" srcset="">
-                    <div class="layer">
-                        <h3>News App</h3>
-                        <p>The app shows the current or new News about all categories like- General, Entertainment, Business, Healt, Economy and son on</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="work-3.jpg" alt="" srcset="">
-                    <div class="layer">
-                        <h3>Shopping App</h3>
-                        <p>Here you can puchase your dealy faishionable things boys and girls clothes and mugs, Tshirt and so on.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <div class="featured-visual">
+                        <img src="CalmateAIImage.webp" alt="Calmate AI Mockup screenshot" class="featured-mockup">
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
-        </div>
-    </div>
 
-    <!-- Contact -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact me</h1>
-                    <p><i class="fa-solid fa-envelope"></i>abhaydubey2767@gmail.com</p>
-                    <p><i class="fa-solid fa-phone-volume"></i><b>+91 </b>8859022825</p>
-                    <div class="social-icons">
-                        <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/abhay-dubey-352b7828a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://wa.me/918859022825" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <!-- Published Mobile Apps Section -->
+            <h3 class="project-subheading"><i class="fa-solid fa-mobile-screen"></i> Published App Store Applications</h3>
+            <div class="projects-grid">
+                <!-- Mutual Fund Wala -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <span class="project-downloads"><i class="fa-solid fa-download"></i> 5K+ Downloads</span>
                     </div>
-                    <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+                    <h4>Mutual Fund Wala</h4>
+                    <p>A highly secure cross-platform mutual fund investment client built in React Native. Delivers real-time growth analytics, multi-portfolio syncs, and comprehensive wealth tracking widgets.</p>
+                    <div class="tech-tag-list" style="margin-bottom: 12px;">
+                        <span>React Native</span>
+                        <span>State Management</span>
+                        <span>API Integrations</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <div class="project-card-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.mutualfundwala&pcampaignid=web_share" target="_blank"><i class="fa-brands fa-google-play"></i> Android</a>
+                            <a href="https://apps.apple.com/in/app/mutualfundwala/id6752248976" target="_blank"><i class="fa-brands fa-apple"></i> iOS</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-right">
+
+                <!-- FoodVerse -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <span class="project-downloads"><i class="fa-solid fa-download"></i> 2K+ Downloads</span>
+                    </div>
+                    <h4>FoodVerse</h4>
+                    <p>A custom social media platform focused on culinary experts and gourmet chefs. Includes dynamic cart handlers, live order routing, and mapping APIs.</p>
+                    <div class="tech-tag-list" style="margin-bottom: 12px;">
+                        <span>React Native</span>
+                        <span>Firebase</span>
+                        <span>Google Maps</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <div class="project-card-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.foodverseapp&pcampaignid=web_share" target="_blank"><i class="fa-brands fa-google-play"></i> Android</a>
+                            <a href="https://apps.apple.com/in/app/foodverse/id6670272068" target="_blank"><i class="fa-brands fa-apple"></i> iOS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barbers Network App -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <span class="project-downloads in-progress"><i class="fa-solid fa-spinner"></i> In Progress</span>
+                    </div>
+                    <h4>Barbers Network App</h4>
+                    <p>A comprehensive scheduling SaaS application catering to stylists and customers. Supports online calendar updates, geolocation tracking, and instant Stripe invoicing.</p>
+                    <div class="tech-tag-list" style="margin-bottom: 12px;">
+                        <span>Expo Native</span>
+                        <span>Stripe</span>
+                        <span>Live Tracking</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <div class="project-card-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.bbn.barber&pcampaignid=web_share" target="_blank"><i class="fa-brands fa-google-play"></i> Android</a>
+                            <a href="https://apps.apple.com/in/app/barbers-network-app-barbers/id6759593367" target="_blank"><i class="fa-brands fa-apple"></i> iOS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spryvoc -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <span class="project-downloads"><i class="fa-solid fa-download"></i> 1K+ Downloads</span>
+                    </div>
+                    <h4>Spryvoc</h4>
+                    <p>A social meetup and community application allowing users to coordinate regional events, create interactive interest groups, and stream live updates.</p>
+                    <div class="tech-tag-list" style="margin-bottom: 12px;">
+                        <span>React Native</span>
+                        <span>REST client</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <div class="project-card-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.spryvoc" target="_blank"><i class="fa-brands fa-google-play"></i> Android</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jammbomart -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <span class="project-downloads"><i class="fa-solid fa-download"></i> 500+ Downloads</span>
+                    </div>
+                    <h4>Jammbomart</h4>
+                    <p>A fast toys and e-commerce shopping utility featuring custom product lists, interactive filters, item checkout carts, and purchase logs.</p>
+                    <div class="tech-tag-list" style="margin-bottom: 12px;">
+                        <span>React Native</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <div class="project-card-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.jammbomart" target="_blank"><i class="fa-brands fa-google-play"></i> Android</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web ERP & Systems Showcase -->
+            <h3 class="project-subheading"><i class="fa-solid fa-desktop"></i> Scalable Web SaaS & ERP Solutions</h3>
+            <div class="projects-grid">
+                <!-- Taskease ERP -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <span class="project-downloads"><i class="fa-solid fa-server"></i> Web Platform</span>
+                    </div>
+                    <h4>Taskease</h4>
+                    <p>An enterprise ERP suite providing companies with centralized taskboards, automatic attendance logs, employee leave parameters, and real-time messaging grids.</p>
+                    <div class="tech-tag-list" style="margin-bottom: 12px;">
+                        <span>Next.js</span>
+                        <span>Node.js</span>
+                        <span>Socket.IO</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <div class="project-card-links">
+                            <span style="color: var(--text-muted); font-size: 13px;"><i class="fa-solid fa-check-circle"></i> Production Ready</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Report Generator -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <span class="project-downloads"><i class="fa-solid fa-microchip"></i> IoT Web App</span>
+                    </div>
+                    <h4>Report Generator</h4>
+                    <p>A professional analytical suite designed to parse hardware array data from PCB units and output downloadable clinical medical reports in custom PDF templates.</p>
+                    <div class="tech-tag-list" style="margin-bottom: 12px;">
+                        <span>React Native</span>
+                        <span>Java Microservices</span>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <div class="project-card-links">
+                            <span style="color: var(--text-muted); font-size: 13px;"><i class="fa-solid fa-network-wired"></i> System Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="sub-title">Get In Touch</h2>
+            <p class="section-desc">Have an upcoming application, SaaS project, or need to hire a performant full-stack engineer? Drop a line.</p>
+            
+            <div class="contact-layout">
+                <!-- Left Channels and direct dialer icons -->
+                <div class="contact-info">
+                    <div>
+                        <!-- Email Gmail Deep link -->
+                        <a href="mailto:abhaydubey2767@gmail.com" class="contact-card glass-card">
+                            <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-card-details">
+                                <h4>Email Me</h4>
+                                <p>abhaydubey2767@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <!-- Mobile phone dialer deep link -->
+                        <a href="tel:+918859022825" class="contact-card glass-card">
+                            <div class="contact-card-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="contact-card-details">
+                                <h4>Call / WhatsApp</h4>
+                                <p>+91 88590 22825</p>
+                            </div>
+                        </a>
+
+                        <!-- LinkedIn connection -->
+                        <a href="https://www.linkedin.com/in/abhay-dubey-352b7828a" target="_blank" class="contact-card glass-card">
+                            <div class="contact-card-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="contact-card-details">
+                                <h4>LinkedIn</h4>
+                                <p>abhay-dubey-352b7828a</p>
+                            </div>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/abhay2767" target="_blank" class="contact-card glass-card">
+                            <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="contact-card-details">
+                                <h4>GitHub Profile</h4>
+                                <p>github.com/abhay2767</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Form box submitting to Google Sheet -->
+                <div class="contact-form glass-card">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="your name..." required>
-                        <input type="email" name="Email" placeholder="your email..." required>
-                        <textarea name="Message" rows="1" placeholder="your message.."></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <div class="form-group-row">
+                            <input type="text" name="Name" class="form-control" placeholder="Your Name" required>
+                            <input type="email" name="Email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <textarea name="Message" class="form-control" placeholder="How can I help you?" required></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Send Message <i class="fa-solid fa-circle-arrow-right"></i></button>
                     </form>
                     <span id="msg"></span>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © Abhay Dubey, Made with <i class="fa-solid fa-heart"></i></p>
+    </section>
+
+    <!-- Footer Copyright -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright © Abhay Dubey, Built with <i class="fa-solid fa-heart"></i> using dynamic animations.</p>
+            </div>
         </div>
-    </div>
+    </footer>
 
-
+    <!-- Interactive JS Utilities -->
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+        // About Section Tab Management
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents");
 
         function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link")
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
             }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab")
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
             }
-            event.currentTarget.classList.add("active-link")
-            document.getElementById(tabname).classList.add("active-tab")
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
+
+        // Mobile Menu Drawer Toggler
+        function toggleMenu() {
+            document.body.classList.toggle("mobile-menu-open");
+            const btnIcon = document.querySelector(".nav-toggle-btn i");
+            if (document.body.classList.contains("mobile-menu-open")) {
+                btnIcon.className = "fa-solid fa-xmark";
+            } else {
+                btnIcon.className = "fa-solid fa-bars";
+            }
+        }
+
+        // Close mobile drawer on link selection
+        document.querySelectorAll("nav ul li a").forEach(link => {
+            link.addEventListener("click", () => {
+                if (document.body.classList.contains("mobile-menu-open")) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // Async submit form to Google Sheet macro integration
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyqeM27Gn8GmJ1JPzFmm3kJtVU-EQqzqyOzQegomo65DJvMMdovynHlfABs_oYFVi-Plw/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            msg.style.color = "var(--accent-cyan)";
+            msg.innerHTML = "Sending message... <i class='fa-solid fa-spinner fa-spin'></i>";
+            
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.style.color = "var(--accent-emerald)";
+                    msg.innerHTML = "<i class='fa-solid fa-circle-check'></i> Thank you! Message sent successfully.";
+                    setTimeout(function() {
+                        msg.innerHTML = "";
+                    }, 6000);
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.style.color = "#ef4444";
+                    msg.innerHTML = "<i class='fa-solid fa-circle-exclamation'></i> An error occurred. Please try again.";
+                    console.error('Error!', error.message);
+                });
+        });
     </script>
-    <script>
-        var sidemeu = document.getElementById("sidemenu")
-        function Openmenu(){
-            sidemeu.style.right = "0";
-        }
-        function Closemenu(){
-            sidemeu.style.right = "-200px";
-        }
-    </script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyqeM27Gn8GmJ1JPzFmm3kJtVU-EQqzqyOzQegomo65DJvMMdovynHlfABs_oYFVi-Plw/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg=document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML= "Message sent successfully!"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
-            form.reset();
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
 </body>
 
 </html>
